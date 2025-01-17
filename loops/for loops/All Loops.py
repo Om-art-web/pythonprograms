@@ -8,12 +8,12 @@ for i in range(1, n+1):                # 1st
     print(i, end=",")
 print()
 
-for i in range(2, n, 2):                # 2nd
+for i in range(2, n, 2):                # 2nd    Even
     print(i, end=",")
 print()
 
 
-for i in range(1, n, 2):                # 3rd
+for i in range(1, n, 2):                # 3rd    Odd
     print(i, end=",")
 print()
 
