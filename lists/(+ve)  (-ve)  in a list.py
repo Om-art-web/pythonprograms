@@ -26,7 +26,5 @@ for i in range(0,n):
         negative.append(b[i])
 print(positive,negative)
 
-o=[1,23,'Om',10.2]
 
-n=len(o)
-print(n)
+

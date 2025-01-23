@@ -7,8 +7,7 @@ for i in range(1, n):
     if stock[i] > stock[i-1]:
         print(a, b)
         positions.append(i)
-
-m = len(positions)
+= len(positions)
 
 for i in range(1, m):
 
