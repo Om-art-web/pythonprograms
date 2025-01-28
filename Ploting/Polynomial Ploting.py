@@ -9,3 +9,5 @@ print(x, y)
 plt.plot(x,y)
 plt.scatter(x,y)
 plt.show()
+
+

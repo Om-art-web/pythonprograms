@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 
 overs=[]
 runs=[]
@@ -15,6 +15,8 @@ while True:
         print('Enter score for over no',currentover)
         run=int(input())
         overs.append(currentover)
+        if currentover>totalovers:
+            print("Error")
         if currentover==1:
             scores.append(run)
         else:
@@ -29,8 +31,8 @@ while True:
 
     if option==3:
 
-        plt.plot(overs,scores)
-        plt.scatter(overs,scores)
+        plt.plot(overs,runs)
+        plt.scatter(overs,runs)
         plt.show()
     
     print(overs,runs,scores)
