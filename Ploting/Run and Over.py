@@ -12,7 +12,7 @@ while True:
     if option==0:
         break
     if option==1:
-        print('Enter score for over no',currentover)
+        print("Enter Score For Over No",currentover)
         run=int(input())
         overs.append(currentover)
         if currentover>totalovers:

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 x=[1,2,3,4,5]
 n=len(x)
 previousclosingprice=65
-prices=[23,34,56,78,20]
+prices=[23,34,56,78,10]
 print(prices[4])
 y=[previousclosingprice for x in range(n)]
 print(y)
