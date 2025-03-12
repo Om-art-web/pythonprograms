@@ -2,14 +2,10 @@ import cv2 as pp
 
 import imagefunctions as img
     
-p1= "images/4.jpg"
+p1= "images/6.jpg"
 pic = img.readimage(p1)
-pic=img.toblue(pic)
-pic=img.showimage("",pic)
+pic=img.horizontalswap(pic)
+img.showimage("",pic)
+# img.saveimage(pic,"save image.png")       # Save image 
 
-
-
-
-
- 
 
