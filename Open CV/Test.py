@@ -1,58 +1,24 @@
+marks = [3, 1, 10]
+# print(max(marks))
 
-def size(mat):
-    return len(mat), len(mat[0])
-
-
-def XReverseMatrix(mat):
-    my, mx = size(mat)
-    for y in range(my):
-        left = 0
-        right = mx-1
-        while left < right:
-            mat[y][left], mat[y][right] = mat[y][right], mat[y][left]
-            left += 1
-            right -= 1
-    return mat
+value=marks[0]
+for newvalue in marks:
+    if newvalue>value:
+        value=newvalue
+print(value)
 
 
-def YReverseMatrix(mat):
-    my, mx = size(mat)
-    top = 0
-    down = my-1
+# 3   12
+# 12 10
 
-    while top < down:
-        for x in range(mx):
-            mat[top][x], mat[down][x] = mat[down][x], mat[top][x]
-        top += 1
-        down -= 1
-    return mat
+maxmarks = 5
+multiplier=maxmarks/value
+print(multiplier)
 
-
-def printMatrix(mat):
-    my, mx = size(mat)
-    print()
-    for y in range(my):
-        for x in range(mx):
-            print(mat[y][x], end="\t")
-        print()
+n=len(marks)
+print(marks)
+for i in range(n):
+    marks[i]=marks[i]*multiplier
+print(marks)
 
 
-def doubleMatrix(mat):
-    my, mx = size(mat)
-    print()
-    for y in range(my):
-        left = 0
-        right = mx-1
-        while left < right:
-            mat[y][right] = mat[y][left]
-            left += 1
-            right -= 1
-    return mat
-
-
-a = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
-# printMatrix(a)
-# YReverseMatrix(a)
-printMatrix(a)
-doubleMatrix(a)
-printMatrix(a)
