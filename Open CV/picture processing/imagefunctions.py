@@ -72,6 +72,8 @@ def reverseblackandwhite(image):      # (reverseblackandwhite) this fucntion is 
      my,mx=size(image)                        # function of (blackandwhite)                
      for y in range(my):
           for x in range(mx):
+
+               
           
                image[y][x][0] = 255-image[y][x][0]# Blue
                image[y][x][1] = 255-image[y][x][1]  # Green
@@ -292,4 +294,5 @@ def saveimage(image,imagepath):        # (saveimage) [imwrite]  function is use 
      
 
 
+         
          
