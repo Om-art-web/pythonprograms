@@ -275,10 +275,11 @@ def combineimage(img1,img2,shiftx,shifty):     # (combineimage) funciton is use 
      print(my1,mx1,my2,mx2)
      for y in range(my1):
           for x in range(mx1):
-               img2[shifty+y][shiftx + x][0] = img1[y][x][0]# Blue
+               img2[shifty+y][shiftx+x][0] = img1[y][x][0]  # Blue
                img2[shifty+y][shiftx+x][1] = img1[y][x][1]  # Green
                img2[shifty+y][shiftx+x][2] = img1[y][x][2]  # Red
      return img2
+
 
 
 
@@ -290,9 +291,3 @@ def combineimage(img1,img2,shiftx,shifty):     # (combineimage) funciton is use 
 
 def saveimage(image,imagepath):        # (saveimage) [imwrite]  function is use for to save your image
      pp.imwrite(imagepath,image)                  #  on your memory disk 
-     
-     
-
-
-         
-         

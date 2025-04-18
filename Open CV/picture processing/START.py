@@ -2,12 +2,12 @@ import cv2 as pp
 
 import imagefunctions as img
     
-p1= "images/4.jpg"
-p2= "images/Anime.jpg"
+p1= "images/Ghost.png"
+p2= "images/mylogo.png"
 pic1 = img.readimage(p1)
 pic2 = img.readimage(p2)
-pic=img.combineimage(pic1,pic2,70,10)
+pic=img.combineimage(pic2,pic1,0,0)
 img.showimage("",pic)
-# img.saveimage(pic,"save image.png")       # Save image 
+# img.saveimage("saveimage",pic)       # Save image
 
 
